@@ -3,7 +3,7 @@ package hu.nive.ujratervezes.adddigits;
 public class AddDigits {
 
     public static int addDigits(String input) {
-        if(input == null || input.equals("")) {
+        if (input == null || input.isEmpty()) {
             return -1;
         }
         char[] inputArray = input.toCharArray();
