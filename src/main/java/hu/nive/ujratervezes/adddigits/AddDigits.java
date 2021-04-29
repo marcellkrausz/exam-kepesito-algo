@@ -6,12 +6,12 @@ public class AddDigits {
         if (input == null || input.isEmpty()) {
             return -1;
         }
-        char[] inputArray = input.toCharArray();
+
         int sum = 0;
 
-        for (int i = 0; i < inputArray.length; i++) {
-            if (Character.isDigit(inputArray[i])) {
-                sum += Integer.parseInt(String.valueOf(inputArray[i]));
+        for (int i = 0; i < input.length(); i++) {
+            if (Character.isDigit(input.charAt(i))) {
+                sum += Integer.parseInt(String.valueOf(input.charAt(i)));
             }
         }
         return sum;
