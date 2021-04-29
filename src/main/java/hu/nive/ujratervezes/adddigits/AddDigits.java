@@ -6,7 +6,6 @@ public class AddDigits {
         if (input == null || input.isEmpty()) {
             return -1;
         }
-
         int sum = 0;
 
         for (int i = 0; i < input.length(); i++) {
